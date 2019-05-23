@@ -1,6 +1,8 @@
 #include <QtWidgets>
-
+#include <wobjectimpl.h>
 #include "dialog.h"
+
+W_OBJECT_IMPL(Dialog)
 
 Dialog::Dialog()
 {
@@ -49,6 +51,7 @@ void Dialog::createHorizontalGroupBox()
 
     for (int i = 0; i < NumButtons; ++i) {
         buttons[i] = new QPushButton(tr("Button %1").arg(i + 1));
+        
         layout->addWidget(buttons[i]);
     }
     horizontalGroupBox->setLayout(layout);

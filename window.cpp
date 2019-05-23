@@ -2,7 +2,9 @@
 #include "window.h"
 #include <QTextBrowser>
 #include <QLabel>
-
+#include "wobjectimpl.h"
+W_OBJECT_IMPL(Window)
+//#include "moc_window.cpp"
 Window::Window()
 {
     QTextBrowser *centralWidget = new QTextBrowser;

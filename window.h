@@ -1,14 +1,14 @@
 #ifndef WINDOW_H
 
 #define WINDOW_H
-
+#include "wobjectdefs.h"
 #include <QWidget>
 
 class QLabel;
 
 class Window : public QWidget
 {
-    Q_OBJECT
+    W_OBJECT(Window)
 
 public:
     Window();

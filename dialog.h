@@ -1,5 +1,6 @@
 #ifndef DIALOG_H
 #define DIALOG_H
+#include "wobjectdefs.h"
 
 #include <QDialog>
 
@@ -15,7 +16,7 @@ class QTextEdit;
 
 class Dialog : public QDialog
 {
-    Q_OBJECT
+    W_OBJECT(Dialog)
 
 public:
     Dialog();
